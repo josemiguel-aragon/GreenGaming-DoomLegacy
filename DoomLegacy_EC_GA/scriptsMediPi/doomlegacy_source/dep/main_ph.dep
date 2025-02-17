@@ -1,0 +1,13 @@
+$(O)/p_hpspr.o: p_hpspr.c
+$(O)/p_henemy.o: p_henemy.c
+$(O)/p_heretic.o: p_heretic.c doomincl.h doomdef.h doomtype.h g_game.h \
+  doomstat.h doomdata.h d_player.h d_items.h p_pspr.h m_fixed.h tables.h \
+  info.h d_think.h p_mobj.h d_ticcmd.h b_bot.h b_search.h b_node.h \
+  d_clisrv.h d_netcmd.h command.h d_event.h p_local.h m_bbox.h r_defs.h \
+  screen.h i_video.h hardware/hw_poly.h p_maputl.h p_spec.h r_main.h \
+  r_data.h r_state.h s_sound.h sounds.h m_random.h dstrings.h d_englsh.h
+$(O)/p_hsight.o: p_hsight.c doomincl.h doomdef.h doomtype.h p_local.h \
+  command.h d_player.h d_items.h p_pspr.h m_fixed.h tables.h info.h \
+  d_think.h p_mobj.h doomdata.h d_ticcmd.h b_bot.h b_search.h b_node.h \
+  m_bbox.h r_defs.h screen.h i_video.h hardware/hw_poly.h p_maputl.h \
+  p_spec.h r_main.h r_data.h r_state.h

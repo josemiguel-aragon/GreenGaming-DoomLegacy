@@ -1,0 +1,120 @@
+$(O)/ogl_sdl.o: sdl/ogl_sdl.c doomincl.h doomdef.h doomtype.h \
+  /usr/include/SDL/SDL.h /usr/include/SDL/SDL_main.h \
+  /usr/include/SDL/SDL_stdinc.h /usr/include/SDL/SDL_config.h \
+  /usr/include/SDL/SDL_platform.h /usr/include/SDL/begin_code.h \
+  /usr/include/SDL/close_code.h /usr/include/SDL/SDL_audio.h \
+  /usr/include/SDL/SDL_error.h /usr/include/SDL/SDL_endian.h \
+  /usr/include/SDL/SDL_mutex.h /usr/include/SDL/SDL_thread.h \
+  /usr/include/SDL/SDL_rwops.h /usr/include/SDL/SDL_cdrom.h \
+  /usr/include/SDL/SDL_cpuinfo.h /usr/include/SDL/SDL_events.h \
+  /usr/include/SDL/SDL_active.h /usr/include/SDL/SDL_keyboard.h \
+  /usr/include/SDL/SDL_keysym.h /usr/include/SDL/SDL_mouse.h \
+  /usr/include/SDL/SDL_video.h /usr/include/SDL/SDL_joystick.h \
+  /usr/include/SDL/SDL_quit.h /usr/include/SDL/SDL_loadso.h \
+  /usr/include/SDL/SDL_timer.h /usr/include/SDL/SDL_version.h \
+  /usr/include/SDL/SDL_opengl.h hardware/r_opengl/r_opengl.h \
+  hardware/hw_drv.h screen.h command.h i_video.h hardware/hw_defs.h \
+  hardware/hw_data.h hardware/hw_glide.h hardware/hw_md2.h \
+  hardware/hw_glob.h hardware/hw_main.h am_map.h d_event.h d_player.h \
+  d_items.h p_pspr.h m_fixed.h tables.h info.h d_think.h p_mobj.h \
+  doomdata.h d_ticcmd.h b_bot.h b_search.h b_node.h r_defs.h \
+  hardware/hw_poly.h
+$(O)/searchp.o: sdl/searchp.c
+$(O)/endtxt.o: sdl/endtxt.c doomincl.h doomdef.h doomtype.h w_wad.h r_defs.h \
+  m_fixed.h d_think.h p_mobj.h doomdata.h info.h tables.h screen.h \
+  command.h i_video.h hardware/hw_poly.h hardware/hw_data.h \
+  hardware/hw_glide.h z_zone.h m_argv.h m_swap.h v_video.h
+$(O)/i_net.o: sdl/i_net.c doomincl.h doomdef.h doomtype.h m_argv.h
+$(O)/filesrch.o: sdl/filesrch.c d_netfil.h doomdef.h doomtype.h w_wad.h \
+  r_defs.h m_fixed.h d_think.h p_mobj.h doomdata.h info.h tables.h \
+  screen.h command.h i_video.h hardware/hw_poly.h hardware/hw_data.h \
+  hardware/hw_glide.h
+$(O)/i_system.o: sdl/i_system.c /usr/include/SDL/SDL.h \
+  /usr/include/SDL/SDL_main.h /usr/include/SDL/SDL_stdinc.h \
+  /usr/include/SDL/SDL_config.h /usr/include/SDL/SDL_platform.h \
+  /usr/include/SDL/begin_code.h /usr/include/SDL/close_code.h \
+  /usr/include/SDL/SDL_audio.h /usr/include/SDL/SDL_error.h \
+  /usr/include/SDL/SDL_endian.h /usr/include/SDL/SDL_mutex.h \
+  /usr/include/SDL/SDL_thread.h /usr/include/SDL/SDL_rwops.h \
+  /usr/include/SDL/SDL_cdrom.h /usr/include/SDL/SDL_cpuinfo.h \
+  /usr/include/SDL/SDL_events.h /usr/include/SDL/SDL_active.h \
+  /usr/include/SDL/SDL_keyboard.h /usr/include/SDL/SDL_keysym.h \
+  /usr/include/SDL/SDL_mouse.h /usr/include/SDL/SDL_video.h \
+  /usr/include/SDL/SDL_joystick.h /usr/include/SDL/SDL_quit.h \
+  /usr/include/SDL/SDL_loadso.h /usr/include/SDL/SDL_timer.h \
+  /usr/include/SDL/SDL_version.h doomincl.h doomdef.h doomtype.h \
+  m_misc.h screen.h command.h i_video.h i_sound.h sounds.h i_system.h \
+  d_ticcmd.h m_fixed.h d_event.h d_net.h g_game.h doomstat.h doomdata.h \
+  d_player.h d_items.h p_pspr.h tables.h info.h d_think.h p_mobj.h \
+  b_bot.h b_search.h b_node.h d_clisrv.h d_netcmd.h g_input.h keys.h \
+  i_joy.h m_argv.h
+$(O)/dosstr.o: sdl/dosstr.c
+$(O)/i_cdmus.o: sdl/i_cdmus.c doomincl.h doomdef.h doomtype.h \
+  /usr/include/SDL/SDL.h /usr/include/SDL/SDL_main.h \
+  /usr/include/SDL/SDL_stdinc.h /usr/include/SDL/SDL_config.h \
+  /usr/include/SDL/SDL_platform.h /usr/include/SDL/begin_code.h \
+  /usr/include/SDL/close_code.h /usr/include/SDL/SDL_audio.h \
+  /usr/include/SDL/SDL_error.h /usr/include/SDL/SDL_endian.h \
+  /usr/include/SDL/SDL_mutex.h /usr/include/SDL/SDL_thread.h \
+  /usr/include/SDL/SDL_rwops.h /usr/include/SDL/SDL_cdrom.h \
+  /usr/include/SDL/SDL_cpuinfo.h /usr/include/SDL/SDL_events.h \
+  /usr/include/SDL/SDL_active.h /usr/include/SDL/SDL_keyboard.h \
+  /usr/include/SDL/SDL_keysym.h /usr/include/SDL/SDL_mouse.h \
+  /usr/include/SDL/SDL_video.h /usr/include/SDL/SDL_joystick.h \
+  /usr/include/SDL/SDL_quit.h /usr/include/SDL/SDL_loadso.h \
+  /usr/include/SDL/SDL_timer.h /usr/include/SDL/SDL_version.h i_sound.h \
+  sounds.h command.h m_argv.h
+$(O)/hwsym_sdl.o: sdl/hwsym_sdl.c hardware/r_opengl/r_opengl.h doomdef.h \
+  hardware/hw_drv.h screen.h doomtype.h command.h i_video.h \
+  hardware/hw_defs.h hardware/hw_data.h hardware/hw_glide.h \
+  hardware/hw_md2.h hardware/hw_glob.h hardware/hw_main.h am_map.h \
+  d_event.h d_player.h d_items.h p_pspr.h m_fixed.h tables.h info.h \
+  d_think.h p_mobj.h doomdata.h d_ticcmd.h b_bot.h b_search.h b_node.h \
+  r_defs.h hardware/hw_poly.h sdl/ogl_sdl.h sdl/hwsym_sdl.h
+$(O)/i_main.o: sdl/i_main.c doomincl.h doomdef.h doomtype.h m_argv.h d_main.h \
+  d_event.h w_wad.h r_defs.h m_fixed.h d_think.h p_mobj.h doomdata.h \
+  info.h tables.h screen.h command.h i_video.h hardware/hw_poly.h \
+  hardware/hw_data.h hardware/hw_glide.h
+$(O)/i_video.o: sdl/i_video.c /usr/include/SDL/SDL.h \
+  /usr/include/SDL/SDL_main.h /usr/include/SDL/SDL_stdinc.h \
+  /usr/include/SDL/SDL_config.h /usr/include/SDL/SDL_platform.h \
+  /usr/include/SDL/begin_code.h /usr/include/SDL/close_code.h \
+  /usr/include/SDL/SDL_audio.h /usr/include/SDL/SDL_error.h \
+  /usr/include/SDL/SDL_endian.h /usr/include/SDL/SDL_mutex.h \
+  /usr/include/SDL/SDL_thread.h /usr/include/SDL/SDL_rwops.h \
+  /usr/include/SDL/SDL_cdrom.h /usr/include/SDL/SDL_cpuinfo.h \
+  /usr/include/SDL/SDL_events.h /usr/include/SDL/SDL_active.h \
+  /usr/include/SDL/SDL_keyboard.h /usr/include/SDL/SDL_keysym.h \
+  /usr/include/SDL/SDL_mouse.h /usr/include/SDL/SDL_video.h \
+  /usr/include/SDL/SDL_joystick.h /usr/include/SDL/SDL_quit.h \
+  /usr/include/SDL/SDL_loadso.h /usr/include/SDL/SDL_timer.h \
+  /usr/include/SDL/SDL_version.h doomincl.h doomdef.h doomtype.h \
+  doomstat.h doomdata.h d_player.h d_items.h p_pspr.h m_fixed.h tables.h \
+  info.h d_think.h p_mobj.h d_ticcmd.h b_bot.h b_search.h b_node.h \
+  d_clisrv.h d_netcmd.h command.h i_system.h d_event.h i_video.h \
+  v_video.h r_defs.h screen.h hardware/hw_poly.h m_argv.h m_menu.h \
+  d_main.h w_wad.h hardware/hw_data.h hardware/hw_glide.h s_sound.h \
+  sounds.h g_input.h keys.h st_stuff.h g_game.h hardware/hw_main.h \
+  hardware/hw_defs.h am_map.h hardware/hw_drv.h hardware/hw_md2.h \
+  hardware/hw_glob.h console.h sdl/hwsym_sdl.h sdl/ogl_sdl.h
+$(O)/i_sound.o: sdl/i_sound.c /usr/include/SDL/SDL.h \
+  /usr/include/SDL/SDL_main.h /usr/include/SDL/SDL_stdinc.h \
+  /usr/include/SDL/SDL_config.h /usr/include/SDL/SDL_platform.h \
+  /usr/include/SDL/begin_code.h /usr/include/SDL/close_code.h \
+  /usr/include/SDL/SDL_audio.h /usr/include/SDL/SDL_error.h \
+  /usr/include/SDL/SDL_endian.h /usr/include/SDL/SDL_mutex.h \
+  /usr/include/SDL/SDL_thread.h /usr/include/SDL/SDL_rwops.h \
+  /usr/include/SDL/SDL_cdrom.h /usr/include/SDL/SDL_cpuinfo.h \
+  /usr/include/SDL/SDL_events.h /usr/include/SDL/SDL_active.h \
+  /usr/include/SDL/SDL_keyboard.h /usr/include/SDL/SDL_keysym.h \
+  /usr/include/SDL/SDL_mouse.h /usr/include/SDL/SDL_video.h \
+  /usr/include/SDL/SDL_joystick.h /usr/include/SDL/SDL_quit.h \
+  /usr/include/SDL/SDL_loadso.h /usr/include/SDL/SDL_timer.h \
+  /usr/include/SDL/SDL_version.h /usr/include/SDL/SDL_mixer.h \
+  /usr/include/SDL/SDL_types.h doomincl.h doomdef.h doomtype.h \
+  doomstat.h doomdata.h d_player.h d_items.h p_pspr.h m_fixed.h tables.h \
+  info.h d_think.h p_mobj.h d_ticcmd.h b_bot.h b_search.h b_node.h \
+  d_clisrv.h d_netcmd.h command.h i_system.h d_event.h i_sound.h \
+  sounds.h m_argv.h m_misc.h m_swap.h w_wad.h r_defs.h screen.h \
+  i_video.h hardware/hw_poly.h hardware/hw_data.h hardware/hw_glide.h \
+  s_sound.h d_main.h z_zone.h qmus2mid.h

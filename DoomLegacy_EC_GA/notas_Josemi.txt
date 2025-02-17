@@ -1,0 +1,97 @@
+Hola Josemi.
+
+Para usar los scripts de medición de consumo, debes de seguir los siguientes pasos:
+
+- Estos scripts miden los programas que estén en la carpeta "EEMBC_benchmark_suites". La carpeta contiene grupos
+ de benchmarks, donde cada grupo tiene que tener el nombre "benchmarks_"+nombre. En el zip tienes la carpeta ya creada. Debes de añadir tus programas bajo la ruta "EEMBC_benchmark_suites/benchmarks_asd" (grupo "asd"). Cada programa debe de ir en una carpeta diferente, donde su correspondiente archivo ".c" principal debe de tener el mismo nombre de la carpeta. A continuación, se muestra un ejemplo.
+
+EEMBC_benchmark_suites/
+	benchmarks_asd/
+		benchmark_a/
+			benchmark_a.c
+		benchmark_b/
+			benchmark_b.c
+
+
+	
+- El contenido de la carpeta "scriptsMedipi" debe de estar en la Raspi de medición que vayas a usar, en el directorio "~/experimentos/". Del mismo modo, el contenido de la carpeta "scriptsExperipi" debe de estar en su correspondiente dispositivo (medición que vayas a usar +1), en la misma ruta de antes.
+
+Para enviar las carpetas "scriptsMedipi", "scriptsExperipi" y "EEMBC_benchmark_suites" puedes hacer uso de "pc_launch", especificando en la línea 289 y 290 (bajo la línea "if __name__=="__main__":") las Raspis a las que vas a enviar las carpetas.
+
+
+
+
+- Teniendo esto ya enviado, debes de crear un objeto de clase "benchmark_measurer",
+ que se encuentra en el archivo de mismo nombre. Esta clase modela la medición de consumo de benchmarks.
+
+Al inicializarse una instancia de la clase, compila los programas de la carpeta antes indicada.
+ El constructor de clase tiene como parámetro relevante el de _usuario_IP_experimentacion,
+  cuyo valor debe de ser un string "pi@192.168.3."+ número de la IP de la pareja.
+
+El objeto creado tiene un atributo "aux_data" donde están las rutas a los programas de la carpeta "EEMBC_benchmark_suites".
+Estas rutas son necesarias, como verás más adelante, para hacer las mediciones.
+
+
+
+
+- Para medir un benchmark, debes de usar el método "main_speedup". Sus parámetros son: 
+	- send_compile_data: Lista usada, en esta clase, para aplicar flags sobre un programa. Los elementos de la lista son, en orden:
+		- ruta al benchmark
+		- lista o string, separado por espacios, de flags
+
+	- exec_data: Lista usada para ejecutar el benchmark. Esta está formada por, en orden:
+		- ruta al benchmark
+		- iteraciones que se quiere medir el benchmark.
+		- Como criterio alternativo, el tiempo que se desea medir el benchmark, ejecutando tantas iteraciones como sea necesario. Este parámetro
+		tiene prioridad sobre el anterior, de forma que si su valor es 0, se usa el anterior. En caso contrario, se ignora el anterior y se hace
+		uso de este.
+		- Tiempo de espera entre iteración e iteración.
+	- file_name: Cadena de texto que utilizado para guardar los CSV con las mediciones hechas.
+
+
+- El resultado de la medición se guardará en disco. Con este método, además, lo tendrás disponible en memoria. Concretamente, hay 3 variables:
+
+	- measures_file: Atributo que contiene todas las muestras.
+
+	- timestamps_file: Atributo que contiene tomas de tiempo de cada muestra.
+		
+	- data_file: Atributo que contiene datos estadísticos calculados a partir de los datos anteriores. Estos son, en orden:
+		- Media de las muestras, en mA.
+		- std de las muestras.
+		- Tiempo de ejecución medido (segundos)'
+		- Total de mA medidos (suma total).
+		- Número de muestras medidas.
+		- Consumo energético (mWs).
+
+
+	Estos atributos son una lista de listas, donde se guarda una lista por cada iteración.
+		
+
+
+
+Esta función ha de ser llamada desde "~". Muy importante.
+
+
+
+Tienes un ejemplo práctico de uso en la carpeta scripts_Medipi.
+
+
+Según lo explicado, lo que deberías de hacer para ejecutar este ejemplo es:
+
+
+- Abres un bash en tu pc
+
+- python3 pc_launch.py
+
+- ./remoteBashSSH.sh "bash" "15" "2" # Te conectas a la Raspi 6, con un timeout de 2 segundos.
+
+- tmux new -s JosemiSession
+
+- tmux a -t JosemiSession
+
+- python3 ~/experimentos/ejemplo_de_uso.py
+
+- Control + B, D para salir dejando la sesión abierta
+
+- exit, para salir de la consola de la Raspi y volver a la de tu pc
+

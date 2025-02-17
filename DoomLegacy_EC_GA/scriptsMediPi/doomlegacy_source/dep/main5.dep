@@ -1,0 +1,36 @@
+$(O)/v_video.o: v_video.c doomincl.h doomdef.h doomtype.h r_local.h tables.h \
+  m_fixed.h screen.h command.h i_video.h m_bbox.h r_main.h d_player.h \
+  d_items.h p_pspr.h info.h d_think.h p_mobj.h doomdata.h d_ticcmd.h \
+  b_bot.h b_search.h b_node.h r_data.h r_defs.h hardware/hw_poly.h \
+  r_state.h r_bsp.h r_segs.h r_plane.h r_sky.h r_things.h sounds.h \
+  r_draw.h v_video.h hu_stuff.h d_event.h w_wad.h hardware/hw_data.h \
+  hardware/hw_glide.h wi_stuff.h console.h i_system.h z_zone.h \
+  doomstat.h d_clisrv.h d_netcmd.h p_setup.h m_misc.h hardware/hw_glob.h \
+  hardware/hw_defs.h hardware/hw_main.h am_map.h
+$(O)/wi_stuff.o: wi_stuff.c doomincl.h doomdef.h doomtype.h wi_stuff.h \
+  d_player.h d_items.h p_pspr.h m_fixed.h tables.h info.h d_think.h \
+  p_mobj.h doomdata.h d_ticcmd.h b_bot.h b_search.h b_node.h g_game.h \
+  doomstat.h d_clisrv.h d_netcmd.h command.h d_event.h hu_stuff.h \
+  w_wad.h r_defs.h screen.h i_video.h hardware/hw_poly.h \
+  hardware/hw_data.h hardware/hw_glide.h m_random.h r_local.h m_bbox.h \
+  r_main.h r_data.h r_state.h r_bsp.h r_segs.h r_plane.h r_sky.h \
+  r_things.h sounds.h r_draw.h s_sound.h st_stuff.h v_video.h z_zone.h \
+  console.h p_info.h dehacked.h m_menu.h
+$(O)/w_wad.o: w_wad.c doomincl.h doomdef.h doomtype.h w_wad.h r_defs.h \
+  m_fixed.h d_think.h p_mobj.h doomdata.h info.h tables.h screen.h \
+  command.h i_video.h hardware/hw_poly.h hardware/hw_data.h \
+  hardware/hw_glide.h z_zone.h v_video.h d_netfil.h dehacked.h \
+  i_system.h d_ticcmd.h d_event.h md5.h m_swap.h m_misc.h \
+  hardware/hw_main.h hardware/hw_defs.h am_map.h d_player.h d_items.h \
+  p_pspr.h b_bot.h b_search.h b_node.h
+$(O)/w_zip.o: w_zip.c doomdef.h doomincl.h doomtype.h w_wad.h r_defs.h \
+  m_fixed.h d_think.h p_mobj.h doomdata.h info.h tables.h screen.h \
+  command.h i_video.h hardware/hw_poly.h hardware/hw_data.h \
+  hardware/hw_glide.h z_zone.h md5.h
+$(O)/z_zone.o: z_zone.c doomincl.h doomdef.h doomtype.h doomstat.h doomdata.h \
+  d_player.h d_items.h p_pspr.h m_fixed.h tables.h info.h d_think.h \
+  p_mobj.h d_ticcmd.h b_bot.h b_search.h b_node.h d_clisrv.h d_netcmd.h \
+  command.h z_zone.h i_system.h d_event.h m_argv.h i_video.h \
+  hardware/hw_drv.h screen.h hardware/hw_defs.h hardware/hw_data.h \
+  hardware/hw_glide.h hardware/hw_md2.h hardware/hw_glob.h \
+  hardware/hw_main.h am_map.h r_defs.h hardware/hw_poly.h

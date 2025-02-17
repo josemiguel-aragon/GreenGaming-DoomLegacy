@@ -1,0 +1,68 @@
+$(O)/hw3sound.o: hardware/hw3sound.c doomincl.h doomdef.h doomtype.h \
+  hardware/hw3sound.h i_sound.h sounds.h command.h s_sound.h m_fixed.h \
+  p_mobj.h doomdata.h info.h d_think.h tables.h r_defs.h screen.h \
+  i_video.h hardware/hw_poly.h w_wad.h hardware/hw_data.h \
+  hardware/hw_glide.h g_game.h doomstat.h d_player.h d_items.h p_pspr.h \
+  d_ticcmd.h b_bot.h b_search.h b_node.h d_clisrv.h d_netcmd.h d_event.h \
+  r_main.h r_data.h r_state.h r_things.h m_random.h z_zone.h
+$(O)/hw_trick.o: hardware/hw_trick.c doomincl.h doomdef.h doomtype.h \
+  doomstat.h doomdata.h d_player.h d_items.h p_pspr.h m_fixed.h tables.h \
+  info.h d_think.h p_mobj.h d_ticcmd.h b_bot.h b_search.h b_node.h \
+  d_clisrv.h d_netcmd.h command.h hardware/hw_glob.h hardware/hw_defs.h \
+  hardware/hw_main.h hardware/hw_data.h hardware/hw_glide.h am_map.h \
+  d_event.h r_defs.h screen.h i_video.h hardware/hw_poly.h r_local.h \
+  m_bbox.h r_main.h r_data.h r_state.h r_bsp.h r_segs.h r_plane.h \
+  r_sky.h r_things.h sounds.h r_draw.h i_system.h
+$(O)/hw_light.o: hardware/hw_light.c doomincl.h doomdef.h doomtype.h \
+  hardware/hw_light.h hardware/hw_glob.h hardware/hw_defs.h \
+  hardware/hw_main.h hardware/hw_data.h hardware/hw_glide.h am_map.h \
+  d_event.h d_player.h d_items.h p_pspr.h m_fixed.h tables.h info.h \
+  d_think.h p_mobj.h doomdata.h d_ticcmd.h b_bot.h b_search.h b_node.h \
+  r_defs.h screen.h command.h i_video.h hardware/hw_poly.h \
+  hardware/hw_drv.h hardware/hw_md2.h z_zone.h m_random.h m_bbox.h \
+  m_swap.h w_wad.h r_state.h r_main.h r_data.h p_local.h p_maputl.h \
+  p_spec.h
+$(O)/hw_bsp.o: hardware/hw_bsp.c doomincl.h doomdef.h doomtype.h \
+  hardware/hw_glob.h hardware/hw_defs.h hardware/hw_main.h \
+  hardware/hw_data.h hardware/hw_glide.h am_map.h d_event.h d_player.h \
+  d_items.h p_pspr.h m_fixed.h tables.h info.h d_think.h p_mobj.h \
+  doomdata.h d_ticcmd.h b_bot.h b_search.h b_node.h r_defs.h screen.h \
+  command.h i_video.h hardware/hw_poly.h r_local.h m_bbox.h r_main.h \
+  r_data.h r_state.h r_bsp.h r_segs.h r_plane.h r_sky.h r_things.h \
+  sounds.h r_draw.h z_zone.h console.h v_video.h m_menu.h i_system.h
+$(O)/hw_main.o: hardware/hw_main.c doomincl.h doomdef.h doomtype.h \
+  hardware/hw_glob.h hardware/hw_defs.h hardware/hw_main.h \
+  hardware/hw_data.h hardware/hw_glide.h am_map.h d_event.h d_player.h \
+  d_items.h p_pspr.h m_fixed.h tables.h info.h d_think.h p_mobj.h \
+  doomdata.h d_ticcmd.h b_bot.h b_search.h b_node.h r_defs.h screen.h \
+  command.h i_video.h hardware/hw_poly.h hardware/hw_light.h \
+  hardware/hw_drv.h hardware/hw_md2.h doomstat.h d_clisrv.h d_netcmd.h \
+  v_video.h p_local.h m_bbox.h p_maputl.h p_spec.h p_setup.h r_local.h \
+  r_main.h r_data.h r_state.h r_bsp.h r_segs.h r_plane.h r_sky.h \
+  r_things.h sounds.h r_draw.h w_wad.h z_zone.h r_splats.h t_func.h \
+  t_parse.h t_vari.h t_prepro.h st_stuff.h
+$(O)/hw_draw.o: hardware/hw_draw.c doomincl.h doomdef.h doomtype.h \
+  hardware/hw_glob.h hardware/hw_defs.h hardware/hw_main.h \
+  hardware/hw_data.h hardware/hw_glide.h am_map.h d_event.h d_player.h \
+  d_items.h p_pspr.h m_fixed.h tables.h info.h d_think.h p_mobj.h \
+  doomdata.h d_ticcmd.h b_bot.h b_search.h b_node.h r_defs.h screen.h \
+  command.h i_video.h hardware/hw_poly.h hardware/hw_drv.h \
+  hardware/hw_md2.h m_misc.h m_swap.h r_draw.h r_main.h r_data.h \
+  r_state.h w_wad.h z_zone.h v_video.h p_setup.h doomstat.h d_clisrv.h \
+  d_netcmd.h
+$(O)/hw_md2.o: hardware/hw_md2.c doomincl.h doomdef.h doomtype.h \
+  hardware/hw_drv.h screen.h command.h i_video.h hardware/hw_defs.h \
+  hardware/hw_data.h hardware/hw_glide.h hardware/hw_md2.h \
+  hardware/hw_glob.h hardware/hw_main.h am_map.h d_event.h d_player.h \
+  d_items.h p_pspr.h m_fixed.h tables.h info.h d_think.h p_mobj.h \
+  doomdata.h d_ticcmd.h b_bot.h b_search.h b_node.h r_defs.h \
+  hardware/hw_poly.h hardware/hw_light.h r_main.h r_data.h r_state.h \
+  w_wad.h z_zone.h
+$(O)/hw_cache.o: hardware/hw_cache.c doomincl.h doomdef.h doomtype.h \
+  hardware/hw_glob.h hardware/hw_defs.h hardware/hw_main.h \
+  hardware/hw_data.h hardware/hw_glide.h am_map.h d_event.h d_player.h \
+  d_items.h p_pspr.h m_fixed.h tables.h info.h d_think.h p_mobj.h \
+  doomdata.h d_ticcmd.h b_bot.h b_search.h b_node.h r_defs.h screen.h \
+  command.h i_video.h hardware/hw_poly.h hardware/hw_drv.h \
+  hardware/hw_md2.h doomstat.h d_clisrv.h d_netcmd.h m_swap.h r_data.h \
+  r_state.h w_wad.h z_zone.h v_video.h r_sky.h

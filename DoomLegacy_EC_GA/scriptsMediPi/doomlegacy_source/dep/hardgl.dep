@@ -1,0 +1,7 @@
+$(O)/r_opengl.o: hardware/r_opengl/r_opengl.c doomincl.h doomdef.h doomtype.h \
+  hardware/r_opengl/r_opengl.h hardware/hw_drv.h screen.h command.h \
+  i_video.h hardware/hw_defs.h hardware/hw_data.h hardware/hw_glide.h \
+  hardware/hw_md2.h hardware/hw_glob.h hardware/hw_main.h am_map.h \
+  d_event.h d_player.h d_items.h p_pspr.h m_fixed.h tables.h info.h \
+  d_think.h p_mobj.h doomdata.h d_ticcmd.h b_bot.h b_search.h b_node.h \
+  r_defs.h hardware/hw_poly.h

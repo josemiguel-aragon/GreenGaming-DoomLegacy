@@ -1,0 +1,38 @@
+$(O)/m_argv.o: m_argv.c doomincl.h doomdef.h doomtype.h command.h
+$(O)/mserv.o: mserv.c doomincl.h doomdef.h doomtype.h doomdata.h command.h \
+  console.h d_event.h mserv.h i_tcp.h i_net.h i_system.h d_ticcmd.h \
+  m_fixed.h d_clisrv.h d_netcmd.h tables.h d_items.h d_net.h
+$(O)/m_cheat.o: m_cheat.c doomincl.h doomdef.h doomtype.h dstrings.h \
+  d_englsh.h am_map.h d_event.h m_cheat.h g_game.h doomstat.h doomdata.h \
+  d_player.h d_items.h p_pspr.h m_fixed.h tables.h info.h d_think.h \
+  p_mobj.h d_ticcmd.h b_bot.h b_search.h b_node.h d_clisrv.h d_netcmd.h \
+  command.h r_local.h screen.h i_video.h m_bbox.h r_main.h r_data.h \
+  r_defs.h hardware/hw_poly.h r_state.h r_bsp.h r_segs.h r_plane.h \
+  r_sky.h r_things.h sounds.h r_draw.h p_local.h p_maputl.h p_spec.h \
+  p_inter.h i_sound.h s_sound.h v_video.h st_stuff.h w_wad.h \
+  hardware/hw_data.h hardware/hw_glide.h
+$(O)/m_swap.o: m_swap.c
+$(O)/m_bbox.o: m_bbox.c doomtype.h m_bbox.h m_fixed.h
+$(O)/m_fixed.o: m_fixed.c i_system.h doomtype.h d_ticcmd.h doomdef.h m_fixed.h \
+  d_event.h
+$(O)/m_misc.o: m_misc.c doomincl.h doomdef.h doomtype.h g_game.h doomstat.h \
+  doomdata.h d_player.h d_items.h p_pspr.h m_fixed.h tables.h info.h \
+  d_think.h p_mobj.h d_ticcmd.h b_bot.h b_search.h b_node.h d_clisrv.h \
+  d_netcmd.h command.h d_event.h m_misc.h hu_stuff.h w_wad.h r_defs.h \
+  screen.h i_video.h hardware/hw_poly.h hardware/hw_data.h \
+  hardware/hw_glide.h wi_stuff.h v_video.h z_zone.h g_input.h keys.h \
+  d_main.h m_argv.h m_swap.h hardware/hw_main.h hardware/hw_defs.h \
+  am_map.h
+$(O)/m_menu.o: m_menu.c doomincl.h doomdef.h doomtype.h am_map.h d_event.h \
+  dstrings.h d_englsh.h d_main.h w_wad.h r_defs.h m_fixed.h d_think.h \
+  p_mobj.h doomdata.h info.h tables.h screen.h command.h i_video.h \
+  hardware/hw_poly.h hardware/hw_data.h hardware/hw_glide.h console.h \
+  r_local.h m_bbox.h r_main.h d_player.h d_items.h p_pspr.h d_ticcmd.h \
+  b_bot.h b_search.h b_node.h r_data.h r_state.h r_bsp.h r_segs.h \
+  r_plane.h r_sky.h r_things.h sounds.h r_draw.h hu_stuff.h wi_stuff.h \
+  g_game.h doomstat.h d_clisrv.h d_netcmd.h g_input.h keys.h m_argv.h \
+  s_sound.h i_system.h m_menu.h v_video.h z_zone.h p_local.h p_maputl.h \
+  p_spec.h p_fab.h p_chex.h p_saveg.h hardware/hw_main.h \
+  hardware/hw_defs.h d_net.h mserv.h p_inter.h m_misc.h
+$(O)/md5.o: md5.c md5.h
+$(O)/m_random.o: m_random.c doomincl.h doomdef.h doomtype.h m_random.h

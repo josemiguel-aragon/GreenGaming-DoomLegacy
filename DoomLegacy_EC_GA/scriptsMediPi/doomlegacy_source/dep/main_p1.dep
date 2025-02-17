@@ -1,0 +1,45 @@
+$(O)/p_chex.o: p_chex.c doomincl.h doomdef.h doomtype.h g_game.h doomstat.h \
+  doomdata.h d_player.h d_items.h p_pspr.h m_fixed.h tables.h info.h \
+  d_think.h p_mobj.h d_ticcmd.h b_bot.h b_search.h b_node.h d_clisrv.h \
+  d_netcmd.h command.h d_event.h p_local.h m_bbox.h r_defs.h screen.h \
+  i_video.h hardware/hw_poly.h p_maputl.h p_spec.h r_main.h r_data.h \
+  r_state.h s_sound.h sounds.h m_random.h m_cheat.h dstrings.h \
+  d_englsh.h w_wad.h hardware/hw_data.h hardware/hw_glide.h z_zone.h \
+  p_chex.h hardware/hw_light.h hardware/hw_glob.h hardware/hw_defs.h \
+  hardware/hw_main.h am_map.h hardware/hw_drv.h hardware/hw_md2.h
+$(O)/p_ceilng.o: p_ceilng.c doomincl.h doomdef.h doomtype.h p_local.h \
+  command.h d_player.h d_items.h p_pspr.h m_fixed.h tables.h info.h \
+  d_think.h p_mobj.h doomdata.h d_ticcmd.h b_bot.h b_search.h b_node.h \
+  m_bbox.h r_defs.h screen.h i_video.h hardware/hw_poly.h p_maputl.h \
+  p_spec.h p_tick.h r_state.h s_sound.h sounds.h z_zone.h
+$(O)/p_doors.o: p_doors.c doomincl.h doomdef.h doomtype.h doomstat.h \
+  doomdata.h d_player.h d_items.h p_pspr.h m_fixed.h tables.h info.h \
+  d_think.h p_mobj.h d_ticcmd.h b_bot.h b_search.h b_node.h d_clisrv.h \
+  d_netcmd.h command.h p_local.h m_bbox.h r_defs.h screen.h i_video.h \
+  hardware/hw_poly.h p_maputl.h p_spec.h p_tick.h p_inter.h r_state.h \
+  dstrings.h d_englsh.h s_sound.h sounds.h z_zone.h hardware/hw3sound.h
+$(O)/p_extnodes.o: p_extnodes.c doomincl.h doomdef.h doomtype.h p_extnodes.h \
+  w_wad.h r_defs.h m_fixed.h d_think.h p_mobj.h doomdata.h info.h \
+  tables.h screen.h command.h i_video.h hardware/hw_poly.h \
+  hardware/hw_data.h hardware/hw_glide.h z_zone.h r_main.h d_player.h \
+  d_items.h p_pspr.h d_ticcmd.h b_bot.h b_search.h b_node.h r_data.h \
+  r_state.h r_splats.h m_swap.h
+$(O)/p_enemy.o: p_enemy.c doomincl.h doomdef.h doomtype.h p_local.h command.h \
+  d_player.h d_items.h p_pspr.h m_fixed.h tables.h info.h d_think.h \
+  p_mobj.h doomdata.h d_ticcmd.h b_bot.h b_search.h b_node.h m_bbox.h \
+  r_defs.h screen.h i_video.h hardware/hw_poly.h p_maputl.h p_spec.h \
+  p_tick.h p_inter.h g_game.h doomstat.h d_clisrv.h d_netcmd.h d_event.h \
+  r_main.h r_data.h r_state.h s_sound.h sounds.h m_random.h t_script.h \
+  t_parse.h t_vari.h t_prepro.h hardware/hw3sound.h p_henemy.c
+$(O)/p_fab.o: p_fab.c doomincl.h doomdef.h doomtype.h g_game.h doomstat.h \
+  doomdata.h d_player.h d_items.h p_pspr.h m_fixed.h tables.h info.h \
+  d_think.h p_mobj.h d_ticcmd.h b_bot.h b_search.h b_node.h d_clisrv.h \
+  d_netcmd.h command.h d_event.h p_local.h m_bbox.h r_defs.h screen.h \
+  i_video.h hardware/hw_poly.h p_maputl.h p_spec.h r_state.h p_fab.h \
+  m_random.h dehacked.h r_data.h
+$(O)/p_floor.o: p_floor.c doomincl.h doomdef.h doomtype.h doomstat.h \
+  doomdata.h d_player.h d_items.h p_pspr.h m_fixed.h tables.h info.h \
+  d_think.h p_mobj.h d_ticcmd.h b_bot.h b_search.h b_node.h d_clisrv.h \
+  d_netcmd.h command.h p_local.h m_bbox.h r_defs.h screen.h i_video.h \
+  hardware/hw_poly.h p_maputl.h p_spec.h p_tick.h r_state.h s_sound.h \
+  sounds.h z_zone.h

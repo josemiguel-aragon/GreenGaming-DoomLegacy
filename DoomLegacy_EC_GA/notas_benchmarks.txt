@@ -1,0 +1,7 @@
+Los benchmark "mp4encode", "mp4decode", y "rotate01" al crear el archivo "all.c" que lo ejecuta a todos juntos (scriptsMediPi > create_file_all_c_bc.py), dan errores de violación de segmento, otra violación de segmento, y un error "double free or corruption (!prev)" relacionado con la memoria, respectivamente.
+
+Sabiendo esto, se han de excluir estos tres benchmarks de la ejecución. Para ello, se recomienda su eliminación del directorio "EEMBC_benchmarks_suites_redefinido". Se encuentran en las suites "digital_entertainment" los dos primeros, y el último en "office_automation".
+
+
+Además, se ha comprobado que hay benchmarks que compilan en algunos de los equipos personales que hemos usado, mientras que en otros no.
+

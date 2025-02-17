@@ -1,0 +1,61 @@
+$(O)/qmus2mid.o: qmus2mid.c doomincl.h doomdef.h doomtype.h qmus2mid.h w_wad.h \
+  r_defs.h m_fixed.h d_think.h p_mobj.h doomdata.h info.h tables.h \
+  screen.h command.h i_video.h hardware/hw_poly.h hardware/hw_data.h \
+  hardware/hw_glide.h z_zone.h i_system.h d_ticcmd.h d_event.h byteptr.h \
+  m_swap.h
+$(O)/screen.o: screen.c doomincl.h doomdef.h doomtype.h screen.h command.h \
+  i_video.h console.h d_event.h am_map.h i_system.h d_ticcmd.h m_fixed.h \
+  r_local.h tables.h m_bbox.h r_main.h d_player.h d_items.h p_pspr.h \
+  info.h d_think.h p_mobj.h doomdata.h b_bot.h b_search.h b_node.h \
+  r_data.h r_defs.h hardware/hw_poly.h r_state.h r_bsp.h r_segs.h \
+  r_plane.h r_sky.h r_things.h sounds.h r_draw.h m_argv.h v_video.h \
+  st_stuff.h hu_stuff.h w_wad.h hardware/hw_data.h hardware/hw_glide.h \
+  wi_stuff.h z_zone.h hardware/hw_main.h hardware/hw_defs.h
+$(O)/sounds.o: sounds.c doomincl.h doomdef.h doomtype.h sounds.h s_sound.h \
+  command.h m_fixed.h p_mobj.h doomdata.h info.h d_think.h tables.h \
+  r_defs.h screen.h i_video.h hardware/hw_poly.h r_things.h d_player.h \
+  d_items.h p_pspr.h d_ticcmd.h b_bot.h b_search.h b_node.h z_zone.h \
+  w_wad.h hardware/hw_data.h hardware/hw_glide.h
+$(O)/st_lib.o: st_lib.c doomincl.h doomdef.h doomtype.h st_lib.h r_defs.h \
+  m_fixed.h d_think.h p_mobj.h doomdata.h info.h tables.h screen.h \
+  command.h i_video.h hardware/hw_poly.h w_wad.h hardware/hw_data.h \
+  hardware/hw_glide.h st_stuff.h d_event.h d_player.h d_items.h p_pspr.h \
+  d_ticcmd.h b_bot.h b_search.h b_node.h v_video.h z_zone.h
+$(O)/s_sound.o: s_sound.c doomincl.h doomdef.h doomtype.h doomstat.h \
+  doomdata.h d_player.h d_items.h p_pspr.h m_fixed.h tables.h info.h \
+  d_think.h p_mobj.h d_ticcmd.h b_bot.h b_search.h b_node.h d_clisrv.h \
+  d_netcmd.h command.h g_game.h d_event.h m_argv.h r_main.h r_data.h \
+  r_defs.h screen.h i_video.h hardware/hw_poly.h r_state.h r_things.h \
+  sounds.h p_info.h i_sound.h s_sound.h qmus2mid.h w_wad.h \
+  hardware/hw_data.h hardware/hw_glide.h z_zone.h d_main.h m_random.h \
+  hardware/hw3sound.h
+$(O)/st_stuff.o: st_stuff.c doomincl.h doomdef.h doomtype.h am_map.h d_event.h \
+  g_game.h doomstat.h doomdata.h d_player.h d_items.h p_pspr.h m_fixed.h \
+  tables.h info.h d_think.h p_mobj.h d_ticcmd.h b_bot.h b_search.h \
+  b_node.h d_clisrv.h d_netcmd.h command.h m_cheat.h screen.h i_video.h \
+  r_local.h m_bbox.h r_main.h r_data.h r_defs.h hardware/hw_poly.h \
+  r_state.h r_bsp.h r_segs.h r_plane.h r_sky.h r_things.h sounds.h \
+  r_draw.h p_local.h p_maputl.h p_spec.h p_inter.h m_random.h st_stuff.h \
+  st_lib.h w_wad.h hardware/hw_data.h hardware/hw_glide.h v_video.h \
+  keys.h z_zone.h hu_stuff.h wi_stuff.h d_main.h hardware/hw_drv.h \
+  hardware/hw_defs.h hardware/hw_md2.h hardware/hw_glob.h \
+  hardware/hw_main.h
+$(O)/sb_bar.o: sb_bar.c doomincl.h doomdef.h doomtype.h p_local.h command.h \
+  d_player.h d_items.h p_pspr.h m_fixed.h tables.h info.h d_think.h \
+  p_mobj.h doomdata.h d_ticcmd.h b_bot.h b_search.h b_node.h m_bbox.h \
+  r_defs.h screen.h i_video.h hardware/hw_poly.h p_maputl.h p_spec.h \
+  w_wad.h hardware/hw_data.h hardware/hw_glide.h v_video.h s_sound.h \
+  sounds.h z_zone.h r_local.h r_main.h r_data.h r_state.h r_bsp.h \
+  r_segs.h r_plane.h r_sky.h r_things.h r_draw.h p_inter.h m_random.h \
+  keys.h dstrings.h d_englsh.h g_game.h doomstat.h d_clisrv.h d_netcmd.h \
+  d_event.h m_cheat.h hu_stuff.h wi_stuff.h st_stuff.h st_lib.h \
+  hardware/hw_drv.h hardware/hw_defs.h hardware/hw_md2.h \
+  hardware/hw_glob.h hardware/hw_main.h am_map.h
+$(O)/s_amb.o: s_amb.c doomincl.h doomdef.h doomtype.h g_game.h doomstat.h \
+  doomdata.h d_player.h d_items.h p_pspr.h m_fixed.h tables.h info.h \
+  d_think.h p_mobj.h d_ticcmd.h b_bot.h b_search.h b_node.h d_clisrv.h \
+  d_netcmd.h command.h d_event.h p_local.h m_bbox.h r_defs.h screen.h \
+  i_video.h hardware/hw_poly.h p_maputl.h p_spec.h p_setup.h r_data.h \
+  r_state.h m_random.h s_sound.h sounds.h w_wad.h hardware/hw_data.h \
+  hardware/hw_glide.h z_zone.h dstrings.h d_englsh.h r_main.h t_script.h \
+  t_parse.h t_vari.h t_prepro.h
