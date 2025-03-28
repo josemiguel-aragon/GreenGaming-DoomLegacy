@@ -22,9 +22,9 @@ from llvmIntegerProblemV3doom import llvmIntegerProblem
 
 
 ### SETTINGS
-config_max_evaluations = 5 # Maximum number of evaluations for the GA
-config_population_size = 1 # Total population size of the GA
-config_offspring_population_size = 1 # Total offspring population size of the GA
+config_max_evaluations = 10000 # Maximum number of evaluations for the GA
+config_population_size = 100 # Total population size of the GA
+config_offspring_population_size = 100 # Total offspring population size of the GA
 config_probability_mutation = 1. / 300. # Mutation probability for the GA
 config_probability_crossover = 1 # Crossover probability for the GA
 config_solution_length = 300 # Sequence of passes length
@@ -42,7 +42,7 @@ config_usedelay = False # True introduce a random delay between 1-3 seconds betw
 config_usenuma = False # True launch evaluations in a different NUMA unit than the GA
 config_useworstcase = True # True enable worstcase uncertainty treatment method
 config_custom = False # True enable our own MO uncertainty treatment approach
-config_runs = 1 # Number of measurements to calculate the evaluation method
+config_runs = 5 # Number of measurements to calculate the evaluation method
 config_worstruns = 5 # Number of the worst runs used in the Interval + Worstcase uncertainty treatment method
 
 if __name__ == '__main__':
